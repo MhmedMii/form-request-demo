@@ -147,16 +147,6 @@ The FORM identity is text-based and does not include company logos.
 
 The application separates request screens, workflow rules, validation, and UI components.
 
-```text
-app/                  Next.js layout, page, health, and disabled submit API
-components/wizard/    Question screens, answers, review, and navigation hooks
-components/ui/        Header, progress, and footer
-lib/                  Fictional profiles, flow rules, validation, draft persistence
-apps-script/          Sanitized backend reference; entry points and setup disabled
-tests/                Business-rule and service-isolation checks
-e2e/                  Browser workflow checks
-```
-
 ### Workflow Organization
 
 The wizard coordinates application state.
@@ -174,6 +164,30 @@ The original production application is separate from this public repository.
 Its credentials, deployment connections, company imagery, and real employee data have not been included.
 
 The retained Apps Script files are sanitized backend references with setup and entry points disabled.
+
+---
+
+## 📁 Project Structure
+
+```text
+form-request-demo/
+├── app/                  # Next.js pages, layout, health, and disabled submit API
+├── components/
+│   ├── wizard/           # Question screens, answers, review, and navigation
+│   └── ui/               # Header, progress indicators, and footer
+├── lib/                  # Request rules, validation, fixtures, and draft persistence
+├── apps-script/          # Sanitized backend reference (disabled)
+├── tests/                # Business-rule and service-isolation tests
+└── e2e/                  # Playwright browser workflow tests
+```
+
+### Architecture Notes
+
+- **Presentation:** React components render the guided request interface.
+- **Workflow logic:** Conditional rules determine which question appears next.
+- **Validation:** Request-specific requirements are checked using fictional records.
+- **Persistence:** Demo drafts are stored in the browser.
+- **Backend isolation:** Production integrations are disabled in the public demo.
 
 ---
 

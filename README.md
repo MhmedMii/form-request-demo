@@ -1,37 +1,151 @@
-# FORM — Employee Request Demo
+# FORM — Employee Request System | Live Demo Version
 
-A bilingual employee-request wizard, one question at a time. Explore medical absence, late arrival, permission to leave, emergency, and time-off requests.
+**Bilingual Employee Request Management | Software Engineering Portfolio Project**
 
-Built by [MhmedMii](https://github.com/MhmedMii).
+FORM is a bilingual employee-request application designed to simplify workplace requests through an interactive, step-by-step experience.
 
-**[Try the live demo](https://form-request-demo.vercel.app)** · **[View the source](https://github.com/MhmedMii/form-request-demo)**
+Instead of presenting a long traditional form, FORM guides employees through conditional questions based on the selected request type, validates their answers, and generates a simulated request receipt.
 
-> **All profiles, reasons, attachments, and receipts are fictional.** Requests stay in this browser. Email, Google Sheets, Drive, and employer notifications are disabled.
+**[🌐 View Live Demo](https://form-request-demo.vercel.app/)** · **[💻 View Source Code](https://github.com/MhmedMii/form-request-demo)**
+
+**Tech Stack:** Next.js · React · JavaScript · CSS · Playwright
+
+> **Live Demo Version:** This public application is a portfolio demonstration using entirely fictional employee profiles, reasons, attachments, and receipts. Requests remain in the browser. Email, Google Sheets, Google Drive, and employer notifications are disabled.
 
 ![FORM Olive & Cream request workspace with fictional data](docs/screenshots/form-request-types.png)
 
-## What it does
+---
 
-- Choose a fictional employee and request type.
-- Follow a conditional flow: dates for time off, a sample PDF for medical absence.
-- Review the request and create a simulated receipt.
-- Download the generated PDF or receipt.
-- Switch Arabic/English and light/dark themes.
-- Reset the demo; drafts persist within the current browser tab.
+## 📌 Project Overview
 
-## Try the workflow
+FORM demonstrates a guided employee-request system that makes workplace request submission clearer and easier to follow.
 
-1. Select a fictional profile.
-2. Choose a request type, click **Continue**, and select a sample reason.
-3. Set dates or attach the generated sample PDF when prompted.
-4. Review the details and click **Submit demo request**.
-5. Download a fictional receipt or try another request.
+It presents one question at a time and adapts the remaining steps based on the selected request type.
 
-Real names, contact information, medical files, and free-text personal details are not collected.
+The application supports demonstrations of:
 
-## Design and architecture
+- Medical absence requests.
+- Late arrival requests.
+- Permission to leave.
+- Emergency requests.
+- Time-off requests.
 
-Olive & Cream: warm cream surfaces, muted olive accents, editorial serif headings, and a contextual request panel. A compact progress strip and responsive layouts keep the form focused. The text-only FORM identity contains no company logos. Georgia pairs with Manrope for English; Noto Sans Arabic supports Arabic.
+Users can review their answers before submission and download a simulated receipt.
+
+The public demo is independent of the original production application and does not collect real employee information.
+
+---
+
+## ✨ Key Features
+
+### Guided Request Workflow
+
+- Step-by-step questions rather than a single lengthy form.
+- Conditional questions based on request type.
+- Contextual progress indicators.
+- Review screen before simulated submission.
+
+### Conditional Input & Validation
+
+- Date selection for time-off requests.
+- Generated sample PDF attachment for medical absence.
+- Validation against predefined fictional records.
+- Request-specific questions and input requirements.
+
+### Bilingual Experience
+
+- English and Arabic support.
+- Responsive layouts.
+- Light and dark themes.
+- Arabic typography using Noto Sans Arabic.
+
+### Simulated Submission & Receipts
+
+- Browser-only demo submissions.
+- Generated fictional receipts.
+- Downloadable sample documents and receipts.
+- Option to reset the demonstration.
+
+### Browser-Based Drafts
+
+Drafts persist within the current browser tab.
+
+The demo can be reset without accessing an external database or service.
+
+---
+
+## 🔄 How It Works
+
+### Employee Request Journey
+
+**Select employee → Choose request type → Answer conditional questions → Review details → Simulate submission → Download receipt**
+
+To explore the workflow:
+
+1. Open the [live demo](https://form-request-demo.vercel.app/).
+2. Choose a fictional employee profile.
+3. Select a request type and click **Continue**.
+4. Choose a sample reason.
+5. Complete any additional questions, such as dates or generated sample documents.
+6. Review the request details.
+7. Select **Submit demo request**.
+8. Download the fictional receipt or start another request.
+
+The required questions change according to the selected request type.
+
+No real employee request is submitted during this demonstration.
+
+---
+
+## 👨‍💻 My Contribution
+
+**Role: Software Developer**
+
+The project demonstrates my work on the application's frontend and request-processing workflow, including:
+
+- Building the step-by-step request interface using React and Next.js.
+- Organizing request screens into reusable components.
+- Implementing conditional question flows.
+- Adding validation for supported request scenarios.
+- Supporting bilingual content and responsive layouts.
+- Implementing browser-based draft persistence.
+- Providing simulated submissions and downloadable receipts.
+- Maintaining automated checks for business rules and browser workflows.
+
+The publicly available repository contains a demo implementation with production integrations disabled.
+
+---
+
+## 🛠️ Technology & Architecture
+
+| Area | Technology |
+|---|---|
+| Application framework | Next.js |
+| User interface | React |
+| Programming language | JavaScript |
+| Styling | Plain CSS |
+| Icons | Phosphor icons |
+| Typography | Locally bundled fonts |
+| Unit and business-rule testing | Node.js test runner |
+| Browser testing | Playwright |
+
+### Design System
+
+FORM uses an **Olive & Cream** visual identity:
+
+- Warm cream backgrounds and muted olive accents.
+- Editorial serif headings and clean interface typography.
+- A contextual request panel.
+- Compact progress indicators.
+- Responsive layouts.
+
+Georgia is paired with Manrope for English content, while Noto Sans Arabic supports the Arabic interface.
+
+The FORM identity is text-based and does not include company logos.
+
+### Application Architecture
+
+The application separates request screens, workflow rules, validation, and UI components.
 
 ```text
 app/                  Next.js layout, page, health, and disabled submit API
@@ -43,26 +157,60 @@ tests/                Business-rule and service-isolation checks
 e2e/                  Browser workflow checks
 ```
 
-The wizard coordinates state; question-flow builds the conditional steps; answer components render each input; validation checks predefined fictional records. Submissions are simulated locally without calling a backend.
+### Workflow Organization
 
-The original production application is separate. Its credentials, deployment linkage, company images, and data were not copied.
+The wizard coordinates application state.
 
-## Stack
+The question-flow logic determines which steps appear based on the selected request type.
 
-Next.js, React, JavaScript, plain CSS, Phosphor icons, locally bundled fonts. Node test runner and Playwright verify the demo.
+Answer components render individual inputs, while validation checks the provided answers against predefined fictional records.
 
-## Run locally
+The demo runs locally in the browser without contacting a production backend.
 
-Use Node.js 22 or newer.
+### Separation from Production
+
+The original production application is separate from this public repository.
+
+Its credentials, deployment connections, company imagery, and real employee data have not been included.
+
+The retained Apps Script files are sanitized backend references with setup and entry points disabled.
+
+---
+
+## ▶️ Run Locally
+
+**Requirement:** Node.js 22 or newer.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/MhmedMii/form-request-demo.git
+cd form-request-demo
+```
+
+Install dependencies:
 
 ```bash
 npm ci
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-No environment file, Google account, database, or secret is required.
+Open the local address displayed by Next.js.
 
-## Checks
+No environment file, Google account, database, or secret is required to run the demo.
+
+---
+
+## 🧪 Testing & Checks
+
+The project includes automated checks for application logic, formatting, demo isolation, and production builds.
+
+Run the available checks:
 
 ```bash
 npm test
@@ -72,15 +220,47 @@ npm run demo:check
 npm run build
 ```
 
-For browser tests:
+### Browser Tests
+
+Install Chromium:
 
 ```bash
 npx playwright install chromium
+```
+
+Run Playwright:
+
+```bash
 npm run test:e2e
 ```
 
-## Copyright
+These scripts are provided by the repository. Their presence does not independently establish that all checks currently pass.
 
-Copyright © 2026 [MhmedMii](https://github.com/MhmedMii). All rights reserved.
+---
+
+## 🔒 Demo Limitations & Privacy
+
+FORM is a **public live portfolio demonstration**, not a live employee-request service.
+
+The following safeguards and limitations apply:
+
+- Employee profiles are fictional.
+- Request reasons and attachments are fictional.
+- Downloaded receipts are simulated.
+- Real names, contact information, medical files, and free-text personal details are not collected.
+- Requests remain in the browser.
+- Drafts persist only within the current browser tab.
+- Email delivery is disabled.
+- Google Sheets and Google Drive connections are disabled.
+- Employer notifications are disabled.
+- Production submission endpoints are inactive.
+
+This separation allows visitors to explore FORM's interface and request logic without accessing the original production environment.
+
+---
+
+## 📄 Copyright
+
+Copyright © 2026 [ENG. Mohammed Mahmoud](https://github.com/MhmedMii). All rights reserved.
 
 Public portfolio demonstration with fictional information.

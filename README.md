@@ -273,8 +273,12 @@ This separation allows visitors to explore FORM's interface and request logic wi
 
 ---
 
-## 📄 Copyright
+## 👨‍💻 Author
 
-Copyright © 2026 [ENG. Mohammed Mahmoud](https://github.com/MhmedMii). All rights reserved.
+**ENG. Mohammed Mahmoud**  
+AI & Software Engineer
 
-Public portfolio demonstration with fictional information.
+- **GitHub:** [@MhmedMii](https://github.com/MhmedMii)
+- **Portfolio:** [View Portfolio](https://mohammed-mahmoud-portfolio.vercel.app/)
+
+Built as a portfolio project to demonstrate Next.js, React, and JavaScript development, bilingual Arabic/English interfaces, responsive form layouts, and reusable component design. The live demo showcases conditional request workflows, input validation, browser-based draft persistence, simulated submissions, PDF receipt generation, and automated browser testing with Playwright.

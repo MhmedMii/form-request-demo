@@ -1,0 +1,35 @@
+{
+  "name": "form-request-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "demo:check": "node scripts/check-demo.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/noto-sans-arabic": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "next": "^15.5.27",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.27",
+    "prettier": "^3.9.9"
+  },
+  "type": "module",
+  "description": "A bilingual employee request portfolio demo with fictional data and browser-only submissions.",
+  "overrides": {
+    "postcss": "^8.5.28"
+  }
+}

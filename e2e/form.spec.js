@@ -80,6 +80,10 @@ test('request selection stays visible, updates context, and works with a keyboar
 test('editorial layout fits small laptops and Arabic mobile screens', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
   await chooseProfile(page);
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForFunction(() =>
+    document.getAnimations().every((animation) => animation.playState !== 'running'),
+  );
   await expect(page.getByRole('button', { name: 'Continue', exact: true })).toBeInViewport({
     ratio: 1,
   });

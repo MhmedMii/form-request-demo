@@ -4,6 +4,8 @@ A bilingual employee-request wizard, one question at a time. Explore medical abs
 
 Built by [MhmedMii](https://github.com/MhmedMii).
 
+**[Try the live demo](https://form-request-demo.vercel.app)** · **[View the source](https://github.com/MhmedMii/form-request-demo)**
+
 > **All profiles, reasons, attachments, and receipts are fictional.** Requests stay in this browser. Email, Google Sheets, Drive, and employer notifications are disabled.
 
 ![FORM with fictional employee profiles](docs/screenshots/form-desktop.png)

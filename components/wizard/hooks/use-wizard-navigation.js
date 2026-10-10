@@ -47,7 +47,6 @@ export function useWizardNavigation(form, setForm, text, locale) {
         pdfFileName: '',
       }));
       setError('');
-      setIndex(2);
     },
     goNext() {
       const problem = errorForScreen(current, form, locale);

@@ -10,6 +10,7 @@ export default function AnswerProfile({ form, locale, onSelectProfile, fieldAria
           <button
             key={profile.id}
             className={'profile-card ' + (form.profileId === profile.id ? 'selected' : '')}
+            aria-pressed={form.profileId === profile.id}
             onClick={() => onSelectProfile(profile.id)}
           >
             <span className={'profile-avatar ' + profile.tone}>{profile.initials}</span>

@@ -7,8 +7,13 @@ import AnswerPdf from './answer-pdf';
 const RENDERER_BY_KIND = {
   profile: (props) => <AnswerProfile {...props} />,
   scenario: (props) => <AnswerScenario {...props} />,
-  type: ({ form, locale, onSelectType }) => (
-    <RequestTypeCards locale={locale} selectedType={form.type} onSelect={onSelectType} />
+  type: ({ form, locale, onSelectType, fieldAria }) => (
+    <RequestTypeCards
+      locale={locale}
+      selectedType={form.type}
+      onSelect={onSelectType}
+      fieldAria={fieldAria}
+    />
   ),
   dates: (props) => <AnswerDates {...props} />,
   pdf: (props) => <AnswerPdf {...props} />,

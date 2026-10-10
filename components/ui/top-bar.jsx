@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import { Moon, Sun, ArrowCounterClockwise } from '@phosphor-icons/react';
-export default function TopBar({ text, theme, counter, onToggleLocale, onToggleTheme, onReset }) {
+export default function TopBar({ text, theme, onToggleLocale, onToggleTheme, onReset }) {
   return (
     <header className="top-bar">
       <Link href="/" className="project-title">
-        <strong>
-          FORM<span>.</span>
-        </strong>
+        <strong>FORM</strong>
         <span>{text.projectSubtitle}</span>
       </Link>
       <div className="top-actions">

@@ -69,6 +69,7 @@ export default function RequestWizard() {
   return (
     <WizardLayout
       text={text}
+      context={{ form, locale, screen: nav.current, isDone: submission.isDone }}
       onKeyDown={handleKey}
       rail={{
         screens: nav.screens,

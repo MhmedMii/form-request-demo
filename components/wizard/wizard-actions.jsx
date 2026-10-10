@@ -10,14 +10,6 @@ export default function WizardActions({
 }) {
   return (
     <div className="question-actions">
-      <button
-        className="btn btn-primary"
-        onClick={isReview ? onSubmit : onNext}
-        disabled={isSubmitting}
-      >
-        {isReview ? (isSubmitting ? text.submitting : text.submit) : text.next}
-        {isReview ? <Check size={17} /> : <ArrowRight size={17} className="directional" />}
-      </button>
       {canGoBack && (
         <button className="btn btn-ghost" onClick={onBack} disabled={isSubmitting}>
           <ArrowLeft size={17} className="directional" />
@@ -28,6 +20,14 @@ export default function WizardActions({
         <span />
         {text.autosaveHint}
       </span>
+      <button
+        className="btn btn-primary"
+        onClick={isReview ? onSubmit : onNext}
+        disabled={isSubmitting}
+      >
+        {isReview ? (isSubmitting ? text.submitting : text.submit) : text.next}
+        {isReview ? <Check size={17} /> : <ArrowRight size={17} className="directional" />}
+      </button>
     </div>
   );
 }

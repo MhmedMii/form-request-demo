@@ -8,7 +8,7 @@ Built by [MhmedMii](https://github.com/MhmedMii).
 
 > **All profiles, reasons, attachments, and receipts are fictional.** Requests stay in this browser. Email, Google Sheets, Drive, and employer notifications are disabled.
 
-![FORM with fictional employee profiles](docs/screenshots/form-desktop.png)
+![FORM Olive & Cream request workspace with fictional data](docs/screenshots/form-request-types.png)
 
 ## What it does
 
@@ -22,7 +22,7 @@ Built by [MhmedMii](https://github.com/MhmedMii).
 ## Try the workflow
 
 1. Select a fictional profile.
-2. Choose a request type and sample reason.
+2. Choose a request type, click **Continue**, and select a sample reason.
 3. Set dates or attach the generated sample PDF when prompted.
 4. Review the details and click **Submit demo request**.
 5. Download a fictional receipt or try another request.
@@ -31,7 +31,7 @@ Real names, contact information, medical files, and free-text personal details a
 
 ## Design and architecture
 
-A neutral text-only identity, warm monochrome surfaces, readable typography, clear progress, and responsive layouts. No company logos or artwork are included. Manrope supports English; Noto Sans Arabic supports Arabic.
+Olive & Cream: warm cream surfaces, muted olive accents, editorial serif headings, and a contextual request panel. A compact progress strip and responsive layouts keep the form focused. The text-only FORM identity contains no company logos. Georgia pairs with Manrope for English; Noto Sans Arabic supports Arabic.
 
 ```text
 app/                  Next.js layout, page, health, and disabled submit API

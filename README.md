@@ -118,16 +118,16 @@ The publicly available repository contains a demo implementation with production
 
 ## 🛠️ Technology & Architecture
 
-| Area | Technology |
-|---|---|
-| Application framework | Next.js |
-| User interface | React |
-| Programming language | JavaScript |
-| Styling | Plain CSS |
-| Icons | Phosphor icons |
-| Typography | Locally bundled fonts |
-| Unit and business-rule testing | Node.js test runner |
-| Browser testing | Playwright |
+| Area                           | Technology            |
+| ------------------------------ | --------------------- |
+| Application framework          | Next.js               |
+| User interface                 | React                 |
+| Programming language           | JavaScript            |
+| Styling                        | Plain CSS             |
+| Icons                          | Phosphor icons        |
+| Typography                     | Locally bundled fonts |
+| Unit and business-rule testing | Node.js test runner   |
+| Browser testing                | Playwright            |
 
 ### Design System
 
